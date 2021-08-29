@@ -3,18 +3,17 @@ import { ScrollView } from "react-native";
 
 
 class AboutUs extends Component {
-    // constructor (props){
-    //     super(props);
-    //     }
 
     static navigationOptions = {
-        title:'About Us'
+        title: 'About Us'
     }
 
-    render ()
+    render (){
         return (
-           <ScrollView>
-           </ScrollView>
+          <ScrollView>
+          </ScrollView>
         );
+    }
 }
+
 export default AboutUs;

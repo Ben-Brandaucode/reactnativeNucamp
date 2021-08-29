@@ -86,7 +86,7 @@ const MainNavigator = createDrawerNavigator(
     {
         Home: { screen: HomeNavigator },
         Directory: { screen: DirectoryNavigator },
-        AboutUs: {screen: AboutUsNavigator},
+        About: {screen: AboutUsNavigator},
         Contact: {screen: ContactNavigator}
     },
     {
