@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Home from './HomeComponent';
+import Contact from './ContactComponent';
+import AboutUs from './AboutComponent';
 import Directory from './DirectoryComponent';
 import CampsiteInfo from './CampsiteInfoComponent';
 import Constants from 'expo-constants';
@@ -44,10 +46,48 @@ const HomeNavigator = createStackNavigator(
     }
 );
 
+const ContactNavigator = createStackNavigator(
+    {
+        Home: { screen: Contact }
+    },
+    {
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+const AboutUsNavigator = createStackNavigator(
+    {
+        Home: { screen: AboutUs }
+    },
+    {
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#5637DD'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color: '#fff'
+            }
+        }
+    }
+);
+
+
+
+//----------------------------MAIN DRAWER NAVIGATOR--
 const MainNavigator = createDrawerNavigator(
     {
         Home: { screen: HomeNavigator },
-        Directory: { screen: DirectoryNavigator }
+        Directory: { screen: DirectoryNavigator },
+        AboutUs: {screen: AboutUsNavigator},
+        Contact: {screen: ContactNavigator}
     },
     {
         drawerBackgroundColor: '#CEC8FF'
