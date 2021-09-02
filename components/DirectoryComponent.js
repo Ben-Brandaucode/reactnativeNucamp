@@ -24,7 +24,7 @@ class Directory extends Component {
                     onPress={() => navigate('CampsiteInfo',{campsiteId: item.id })}
                     leftAvatar={{ source: require('./images/react-lake.jpg')}}
                 />
-            );
+            )
         };
 
         return (

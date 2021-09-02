@@ -81,7 +81,7 @@ const AboutUsNavigator = createStackNavigator(
 
 
 
-//----------------------------MAIN DRAWER NAVIGATOR--
+//--------------MAIN DRAWER NAVIGATOR--
 const MainNavigator = createDrawerNavigator(
     {
         Home: { screen: HomeNavigator },
@@ -103,7 +103,7 @@ class Main extends Component {
                 flex: 1,
                 paddingTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight
             }}>
-                <AppNavigator />
+            < AppNavigator />
             </View>
         );
     }
