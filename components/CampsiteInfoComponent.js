@@ -9,7 +9,7 @@ import { ListItem, Card } from 'react-native-elements';
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import {baseUrl } from '../shared/baseUrl';
-import { comments } from '../Redux/comments';
+import { comments } from '../redux/comments';
 
 // import { PARTNERS } from '../shared/partners';
 

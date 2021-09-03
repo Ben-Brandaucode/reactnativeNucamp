@@ -7,7 +7,6 @@ import { baseUrl } from '../shared/baseUrl';
 const mapStateToProps = state => {
     return {
         campsites: state.campsites,
-      
     };
 };
 
@@ -33,7 +32,7 @@ class Directory extends Component {
 
         return (
             <FlatList
-                data={this.props.campsites.campsites.}
+                data={this.props.campsites.campsites}
                 renderItem={renderDirectoryItem}
                 keyExtractor={item => item.id.toString()}
             />
