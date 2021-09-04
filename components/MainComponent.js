@@ -4,8 +4,7 @@ import Directory from './DirectoryComponent';
 import AboutUs from './AboutComponent';
 import Contact from './ContactComponent';
 import CampsiteInfo from './CampsiteInfoComponent';
-import { fetchCampsites, fetchComments, fetchPromotions, 
-    fetchPartners } from '../redux/ActionCreators';
+import { fetchCampsites, fetchComments, fetchPromotions, fetchPartners } from '../redux/ActionCreators';
 import Reservation from './ReservationComponent';
 import Constants from 'expo-constants';
 import { View, Platform, StyleSheet, Text, 
@@ -24,7 +23,7 @@ const mapDispatchToProps = {
     fetchComments,
     fetchPromotions, 
     fetchPartners
-}
+};
 
 const DirectoryNavigator = createStackNavigator(
     {
@@ -253,8 +252,8 @@ class Main extends Component {
     componentDidMount() {
         this.props.fetchCampsites();
         this.props.fetchComments();
-        this.props.fetchPartners();
         this.props.fetchPromotions();
+        this.props.fetchPartners();
     }
     
     render() {
